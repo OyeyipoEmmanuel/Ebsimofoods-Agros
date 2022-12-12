@@ -1,0 +1,193 @@
+@media (max-width:800px) {
+    header{
+        height: fit-content;
+        background: none;
+    }
+    .content{
+        padding: 150px 30px;
+    }
+    .content h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .content h3{
+        width: 100%;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: left;
+    }
+    .content button{
+        background-color: orange;
+        border: none;
+        border-radius: 10px;
+    }
+    .about{
+        display: block;
+        width: fit-content;
+        padding:  0;
+    
+    }
+    .about img{
+        width: 100%;
+        margin: 20px 4px;
+        box-shadow: 5px 1px 5px 5px rgb(216, 216, 216);
+    }
+    .about_ctn h2{
+        font-size: 40px;
+        padding: 20px 30px;
+    }
+    .about_ctn p{
+        text-align: justify;
+        line-height: 30px;
+        width: 100%;
+        font-size: 19px;
+        padding: 0 10px;
+    }
+    .about_ctn button{
+        margin: 30px 0px;
+    }
+    .product{
+        width: fit-content;
+    }
+    .product h2{
+        width:100%;
+        padding: 10px 0px;
+        font-size: 40px;
+    }
+    .take{
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+        padding: 10px 0;
+    }
+    .product_card{
+        display: block;
+    }
+    .product_card img{
+        padding: 20px 0;
+    }
+    .product h4{
+        font-size: 40px;
+        width: 100%;
+    }
+    .product li{
+        width: 100%;
+        font-size: 25px;
+        padding: 7px 0;
+        text-align: left;
+    }
+    .product h5{
+        font-size: 22px;
+    }
+    .shop{
+        flex-direction: column;
+    }
+    .shop img{
+        padding: 40px;
+        width: 100%;
+    }
+    .shop-ctn{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .shop-ctn h3{
+        font-size: 33px;
+        padding: 20px 20px;
+    }
+    .shop-ctn li{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .lr-side{
+        width: fit-content;
+        height: fit-content;
+        display: block;
+    }
+    .left-side{
+        width: 100%;
+        margin: 20px;
+    }
+    .left-side h1{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .left-side p{
+        font-size: 28px;
+        line-height: 40px;
+        width: 90%;
+    }
+    .left-side ul{
+        line-height: 45px;
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .trust h1{
+        font-size: 18px;
+        padding: 50px 0;
+    }
+    .right-side{
+        width: 95%;
+        font-size: 28px;
+        padding: 30px 20px;
+        margin: 10px ;
+    }
+    .right-side input{
+        width: 100%;
+    }
+    .right-side textarea{
+        width: 100%;
+    }
+    .review{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .review h1{
+        width: 100%;
+        font-size: 40px;
+    }
+    .review-card{
+        width: 100%;
+        display: block;
+        margin: 0 30px;
+    }
+    .footer-links{
+        display: block;
+    }
+    hr{
+        margin: 0 70px;
+    }
+}
+@media (max-width:768px){
+    .hamburger{
+        display: flex;
+    }
+    i:nth-child(2){
+        display: none;
+    }
+    /* i:nth-child(2).active{
+        display: block;
+    } */
+    /* .nav-men{
+        z-index: 1000;
+    } */
+    .nav-men.active{
+        left: 0;
+        z-index: 1000;
+    }
+    .nav-men{
+        background-color: rgb(3, 73, 3);
+        z-index: 1000;
+        height: 500px;
+        display: block;
+        gap: 0;
+        width: 100%;
+        transition: 1.0s;
+        margin: 20px 0;
+        padding: 0 200px;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+    }
+}

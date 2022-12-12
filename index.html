@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsiveness.css">
+    <link rel="icon" href="./media/IMG-20221126-WA0011.jpg">
+    <link rel="stylesheet" href="./1.3.0/css/line-awesome.css">
+    <title>EBSIMO Foods & Agro.</title>
+</head>
+<body >
+<header id="home">
+    <nav>
+        <ul class="nav">
+            <img src="./media/IMG-20221126-WA0011.jpg" class="logo" >
+            <div class="nav-men">
+            <li class="nav-menu"><a href="#home">HOME</a></li>
+            <li class="nav-menu"><a href="#about">ABOUT</a></li>
+            <li class="nav-menu"><a href="#product">PRODUCTS</a></li>
+            <li class="nav-menu"><a href="#contact">CONTACT</a></li>
+        </div>
+        </ul>
+        <button class="hamburger">
+            <i class="la la-bars menuIcon"></i>
+            <i class="la la-close closeIcon"></i>
+        </button>
+    </nav>
+
+    <script>
+        var menu = document.querySelector('.nav-men')
+       var hamburger = document.querySelector('.hamburger')
+        var bars = document.querySelector('.menuIcon')
+        var closed = document.querySelector('.closeIcon')
+
+        hamburger.addEventListener('click', ()=>{
+            hamburger.classList.add('active')
+            menu.classList.toggle('active')
+            // closed.classList.add('active')
+        })
+        document.querySelectorAll("nav ul li a").forEach(n => n.addEventListener("click", () =>{
+            hamburger.classList.remove("active")
+            menu.classList.remove("active")
+        }))
+    </script>
+
+
+    <div class="content">
+        <h1>EBSIMO FOODS</h1>
+        <h3>The home of quality foods. Hygenically, unalduterated, processed, cleaned, packaged and premium NAFDAC approved foods. Available in retails, bulk supplies and wholesale deals. </h3>
+        <button><a href="#about">More About Us</a></button>
+    </div>
+</header>
+
+<main>
+    <section class="about" id="about">
+       <img src="./media/IMG_20221024_190805_166-removebg-preview~2 ps.png">
+       <div class="about_ctn">
+        <h2>About Ebsimo.</h2>
+        <p>Ebsimo is a company that's specially based on production of hygenical and NAFDAC approved foods Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis consequatur maxime quisquam. Error placeat cupiditate voluptates eligendi nemo ut consectetur eaque unde consequuntur molestiae, enim numquam temporibus accusantium blanditiis libero? </p>
+        <button><a href="#product">OUR PRODUCTS</a></button>
+       </div> 
+    </section>
+
+    <section class="product" id="product">
+        <h2>OUR PRODUCTS</h2>
+        <h3 class="take">Take a look at our products, How to use and other features of our product. </h3>
+        <div class="product_card">
+                <div class="card1">
+                    <img src="./media/IMG-20221126-WA0007.jpg">
+                    <h4>Ofada Rice</h4>
+                    <p> <h5>How to use</h5> <li>Pour desired water in a pot</li><li>Then add desired quantity of Ebsimo Ofada Rice to the boiling water</li><li> Boil till soft and serve with desired sauce</li><li>Net weight - 1kg</li>
+
+                    </p>
+            </div>
+            <div class="card2">
+                <img src="./media/IMG-20221126-WA0008.jpg">
+                <h4>Garri Ijebu</h4>
+                <p> <h5>How to use</h5> <li>Pour desired water in a pot</li><li>Then add desired quantity of Ebsimo Ofada Rice to the boiling water</li><li> Boil till soft and serve with desired sauce</li><li>Net weight - 1kg</li>
+
+                </p>
+        </div>
+        <div class="card3">
+            <img src="./media/IMG-20221126-WA0009.jpg">
+            <h4>Beans Flour</h4>
+            <p> <h5>How to use</h5> <li>Pour desired water in a pot</li><li>Then add desired quantity of Ebsimo Ofada Rice to the boiling water</li><li> Boil till soft and serve with desired sauce</li><li>Net weight - 1kg</li>
+
+            </p>
+    </div>
+    <div class="card4">
+        <img src="./media/IMG-20221126-WA0013.jpg">
+        <h4>Beans</h4>
+        <p><h5>How to use</h5> <li>Pour desired water in a pot</li><li>Then add desired quantity of Ebsimo Ofada Rice to the boiling water</li><li> Boil till soft and serve with desired sauce</li><li>Net weight - 1kg</li>
+
+        </p>
+    </div>
+</div>
+
+        <!-- <div class="accordion">
+            <div class="contentBx">
+                <div class="label">Beans</div>
+                <div class="content"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates veritatis iste corrupti aspernatur omnis nesciunt quae, quaerat facilis assumenda perferendis doloremque ex qui nisi, nam recusandae minima! Recusandae adipisci voluptatem dolor quas voluptatibus tenetur, odit repudiandae vitae facilis provident!</p></div>
+            </div>
+    
+            <div class="contentBx">
+                <div class="label">Garri</div>
+                <div class="content"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates veritatis iste corrupti aspernatur omnis nesciunt quae, quaerat facilis assumenda perferendis doloremque ex qui nisi, nam recusandae minima! Recusandae adipisci voluptatem dolor quas voluptatibus tenetur, odit repudiandae vitae facilis provident!</p></div>
+            </div>
+    
+            <div class="contentBx">
+                <div class="label">Beans Flour</div>
+                <div class="content"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates veritatis iste corrupti aspernatur omnis nesciunt quae, quaerat facilis assumenda perferendis doloremque ex qui nisi, nam recusandae minima! Recusandae adipisci voluptatem dolor quas voluptatibus tenetur, odit repudiandae vitae facilis provident!</p></div>
+            </div>
+    
+            <div class="contentBx">
+                <div class="label">Ofada Rice</div>
+                <div class="content"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates veritatis iste corrupti aspernatur omnis nesciunt quae, quaerat facilis assumenda perferendis doloremque ex qui nisi, nam recusandae minima! Recusandae adipisci voluptatem dolor quas voluptatibus tenetur, odit repudiandae vitae facilis provident!</p></div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx')
+    
+        var i;
+        for(i = 0; i <accordion.length; i++){
+            accordion[i].addEventListener("click", function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script> -->
+    </section>
+
+
+    <section class="shop">
+        <img src="./media/Shop-with-USmagazine copy.jpg">
+        <div class="shop-ctn">
+        <h3>Shop with us through our various stores around the state</h3>
+        <ul>
+            <li>Technology Incubation center, 1, Oba Ogunji Rd, Pen Cinema, Agege, Lagos</li>
+            <li>4, Aliu Ogun Street, Abaranje Ikotun, Lagos.</li>
+            <li>18A Idita Road, Under Apongbon Bridge, Lagos Island, Lagos</li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="lr-side">
+        <div class="left-side">
+            <h1>Let's Talk.</h1>
+            <p>
+                Ebsimo is a company that would love to know your thoughts and feeling towards us. Send us a message and we promise to give you an encouraging and rousing response<br><br>Talk to our team today to:
+            </p>
+            <ul>
+                <li><strong>Seek for more knowledge on our products</li>
+                <li>Get a wonderful answers to your questions.</li>
+                <li>Get a discount on a product</strong></li>
+            </ul>
+
+            <h3>Contact us through :</h3>
+            <p>Phone Number: 08024640048</p>
+            <p>Email: Ebsimofoods@gmail.com</p><br>
+            <div class="trust">
+                <h2>Trusted By:</h2>
+                <img src="./media/5094e432-nafdac-logo.gif">
+                <img src="./media/Standards-organisation-of-Nigeria-SON edit.jpg">
+                <img src="./media/QC approved.jpg">
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <form>
+                First name*
+                <input type="text">
+                Last name*
+                <input type="text">
+                Email*
+                <input type="email">
+                Phone number
+                <input type="text" placeholder="+234">
+                Leave A Message*
+                <textarea cols="47" rows="25"></textarea>   
+                <button><a href="#about">SEND</a></button>      
+            </form>
+        </div>
+    </div>
+
+    </section>
+
+    <section class="review">
+        <h1>WHAT OUR CUSTOMERS THINS ABOUT US</h1>
+        <div class="review-card">
+            <div class="rcard">
+                <img src="./media/IMG-20210413-WA0007.jpg"  class="r-profile" >
+                <img  src="./media/4.5 star.jpg" class="r-star">
+                <p>Wonderful product i was amazed when i bought the beans flour and cooked moi-moi, it was wonderful even better than some local restaurants moi-moi. Great job keep it up EBSIMO.</p><br><p class="r-info">Alfred Wilson</p>
+            </div>
+
+            <div class="rcard">
+                <img src="./media/WIN-20200924-WA0042.jpg"  class="r-profile" >
+                <img  src="./media/5 star.jpg" class="r-star">
+                <p>Wonderful product i was amazed when i bought the beans flour and cooked moi-moi, it was wonderful even better than some local restaurants moi-moi. Great job keep it up EBSIMO.</p><br><p class="r-info">Alfred Wilson</p>
+            </div>
+
+            <div class="rcard">
+                <img src="./media/IMG-20220624-WA0031.jpg"  class="r-profile" >
+                <img  src="./media/4.5 star.jpg" class="r-star">
+                <p>Wonderful product i was amazed when i bought the beans flour and cooked moi-moi, it was wonderful even better than some local restaurants moi-moi. Great job keep it up EBSIMO.</p><br><p class="r-info">Alfred Wilson</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-links">
+    <ul>
+        <li>Quick Links</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">Mission & Vision</a></li>
+    </ul>
+
+    <ul>
+        <li>Products</li>
+        <li><a href="#">Beans</a></li>
+        <li><a href="#">Ofada Rice</a></li>
+        <li><a href="#">Beans Flour</a></li>
+        <li><a href="#">Garri</a></li>
+    </ul>
+
+    <ul>
+        <li>Policies</li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Cookie Settings</a></li>
+        <li><a href="#">Guidelines</a></li>
+        <li><a href="#">Moderation</a></li>
+    </ul>
+    <ul>
+        <li class="first"> FOLLOW US</li>
+        <div class="icon">
+          <a href="https://www.twitter.com"><i class="lab la-twitter"></i></a> 
+          <a href="https://www.instagram.com"> <i class="lab la-instagram"></i></a>
+          <a href="https://www.facebook.com"><i class="lab la-facebook-f"></i></a>
+          <a href="https://www.youtube.com"><i class="lab la-youtube"></i></a> 
+      </div>
+  </ul>
+</div>
+<hr color="gray" width="20%">
+<div class="copy">
+    <p>&copy; 2022 Ebsimo Foods & Agro</p>
+</div>
+</footer>
+
+
+
+</body>
+</html>
